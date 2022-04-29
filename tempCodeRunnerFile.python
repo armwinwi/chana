@@ -1,0 +1,14 @@
+class book:
+    def  __init__(self, name,ISBN, price):
+        self.name = name
+        self.ISBN = ISBN
+        self.price = price
+    def tax_book(self):
+        Booknew = self.price * 1.10
+        return Booknew
+Mybook = book('ABC', '149190142X', 100)
+
+print("Title of book = %s"%Mybook.name)
+print("ISBN of book = %s"%Mybook.ISBN)
+print("Price of book = %.2f"%Mybook.tax_book())
+Mybook.tax_book()
